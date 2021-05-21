@@ -1,0 +1,54 @@
+.btn {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  .time_content {
+    height: 30px;
+  }
+  .clear_icon {
+    color: #ccc;
+    display: none;
+    &:hover {
+      color: #666;
+    }
+  }
+  &.clearable_show_btn {
+    &:hover {
+      .clear_icon {
+        margin-left: 8px;
+        display: block !important;
+      }
+      .calendar_icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.drop_down {
+  display: flex;
+  > div {
+    flex: 1;
+    padding: 2px 0;
+    text-align: center;
+    &:first-child {
+      border-right: 1px solid #ccc;
+    }
+    .common_cell {
+      line-height: 26px;
+      &:hover {
+        background-color: #e6f7ff;
+      }
+      &.active {
+        background-color: #8bd0f0;
+      }
+    }
+  }
+}
+.drop_down_menu {
+  width: 180px;
+}
+
+.time_picker_menu_item {
+  padding: 5px;
+}
